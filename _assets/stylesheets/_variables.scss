@@ -38,3 +38,10 @@ $base-border-radius: 4px;
 // Effects
 // =============================================================================
 $base-transition-speed: .2s;
+// Accents
+$accent: #20aee6;
+$accent-dark: darken($accent, 15);
+$accent-darker: darken($accent, 30);
+// Gradient Border
+$gradient-border-start: $accent;
+$gradient-border-end: #396c7b;

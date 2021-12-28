@@ -1,25 +1,43 @@
 // =============================================================================
 // Header
 // =============================================================================
-.header-nav {
-  display: block;
-  padding: 75px 0 20px;
-  border-bottom: 1px solid $accent; //$base-border-color;
+#navigation-container {
+  padding-top: 75px;
   transition: padding 0.4s;
-  &.appeared {
-    transition: padding 0.4s;
-  }
+  z-index: 1;
+  background-color: $body-background;
   &.sticky {
     position: sticky;
     top: 0;
-    padding: 0 0 20px;
-    transition: padding 0.4s, border-bottom-color 0.4s;
-    background-color: $body-background;
-    z-index: 1;
-    border-bottom-color: $accent-darker;
-    &:hover {
-      border-bottom-color: $accent;
+    padding-top: 0;
+    transition: padding 0.4s;
+    .gradient-border {
+      border-image-source: linear-gradient(to right, darken($gradient-border-start, 25), darken($gradient-border-end, 15));
     }
+    .header-tags {
+      padding: 3px 0;
+      transition: padding 0.4s;
+    }
+  }
+}
+
+.gradient-border {
+  border-image-slice: 1;
+  border-width: 1px;
+  border-image-source: linear-gradient(to right, $gradient-border-start, $gradient-border-end);
+  &.gradient-border-bottom {
+    border-bottom: 1px solid $accent;
+  }
+}
+
+.header-nav {
+  display: block;
+  //padding: 75px 0 20px;
+  padding: 0px 0 20px;
+  // border-bottom: 1px solid $accent; // uncomment for simple border
+  transition: padding 0.4s, border-bottom-color 0.4s ease 0.4s;
+  &.appeared {
+    transition: padding 0.4s;
   }
 }
 
@@ -61,16 +79,23 @@
 }
 
 .header-tags {
-  padding: 0;
-  margin: 30px 0 0;
+  padding: 10px 0;
   list-style: none;
+  display: flex;
+  flex-direction: row;
+  // border-bottom: 1px solid $accent; // uncomment for simple border
   li {
-    display: inline-block;
+    display:flex; //display: inline-block;
+    
+    align-items: center;
+
     padding-right: 10px;
     a {
       display: inline-block;
       color: $header-link-color;
       text-decoration: none;
+      text-transform: uppercase;
+      font-size:12px;
       &:hover {
         color: $header-link-color-hover;
       }
@@ -82,7 +107,21 @@
   .header-nav {
     text-align: center;
   }
+
+  #navigation-container {    
+      &.sticky {
+        .header-nav {
+          padding-bottom:10px;
+        }
+
+        .header-links {
+          margin:0;
+        }      
+      }    
+  }
+
   .header-links {
+
     display: block;
     float: none;
     text-align: center;
@@ -94,7 +133,13 @@
     }
   }
   .header-tags {
-    margin: 20px 0 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content:center;
+    margin: 0;
     text-align: center;
     li {
       padding: 0 5px;

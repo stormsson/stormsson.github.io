@@ -1,16 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/tag/design/</loc>
-<lastmod>2021-12-22T00:56:54+01:00</lastmod>
+<loc>http://localhost:4000/tag/blockchain/</loc>
+<lastmod>2021-12-28T18:50:09+01:00</lastmod>
 </url>
 <url>
-<loc>http://localhost:4000/tag/jekyll/</loc>
-<lastmod>2021-12-22T00:56:54+01:00</lastmod>
-</url>
-<url>
-<loc>http://localhost:4000/tag/web/</loc>
-<lastmod>2021-12-22T00:56:54+01:00</lastmod>
+<loc>http://localhost:4000/tag/smart-contracts/</loc>
+<lastmod>2021-12-28T18:50:09+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/posts/chalk-sample-post-with-all-elements</loc>
@@ -26,7 +22,7 @@
 </url>
 <url>
 <loc>http://localhost:4000/posts/prova</loc>
-<lastmod>2021-12-21T23:06:19+01:00</lastmod>
+<lastmod>2021-12-28T14:19:16+01:00</lastmod>
 </url>
 <url>
 <loc>http://localhost:4000/about</loc>
