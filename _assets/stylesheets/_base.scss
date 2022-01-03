@@ -23,6 +23,9 @@ body {
   line-height: $base-line-height;
   color: $base-font-color;
   background: $body-background;
+  &.splashing {
+    overflow: hidden;
+  }
 }
 
 // Typography

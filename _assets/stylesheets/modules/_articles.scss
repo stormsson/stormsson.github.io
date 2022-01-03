@@ -14,7 +14,7 @@
   li {
     position: relative;
     display: block;
-    padding: 50px 0;
+    padding: 55px 0;
     border-bottom: 1px solid $base-border-color;
     &:last-child {
       border-bottom: 0;
@@ -54,12 +54,16 @@
 .article-list-item {
   a {
     text-decoration: none;
-    h5 {
+    h5 {      
       position: relative;
       display: block;
       padding-right: 25px;
       color: $article-header-title-color;
-      border-bottom: 1px solid transparent;
+      border-bottom: 1px solid transparent;      
+      i {
+        margin-left:5px;
+        font-size:15px;
+      }
       svg {
         width: 16px;
         height: 16px;
