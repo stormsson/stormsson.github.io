@@ -1,7 +1,7 @@
 # Mandatory settings
 
 blog_theme: dark # Or use dark
-name: mimmo.eth
+name: mimmo.dev
 paginate: 10
 url: https://stormsson.github.io
 
