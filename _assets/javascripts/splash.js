@@ -1,6 +1,5 @@
 // this is included by site.splash_enabled = true
 $(document).ready(function() {
-    $('#splash').show();
     
     // set "active" class to #svg-mimmo
     $('#svg-mimmo').addClass('active');
@@ -11,6 +10,6 @@ $(document).ready(function() {
         $('body').removeClass('splashing');
 
         $('#splash').fadeOut(500);
-    }, 3000);
+    }, 2500);
     
 });

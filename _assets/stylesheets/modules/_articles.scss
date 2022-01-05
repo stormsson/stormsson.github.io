@@ -3,7 +3,7 @@
 // =============================================================================
 .article {
   display: block;
-  margin: 100px 0;
+  margin: 70px 0;
 }
 
 .article-list {
@@ -139,7 +139,10 @@
 // =============================================================================
 .article-header {
   display: block;
-  padding-bottom: 30px;
+  //padding-bottom: 30px;
+  padding:20px;
+  border-radius:5px;
+  background-color: #24262b;
   margin-bottom: 30px;
   border-bottom: 1px solid $base-border-color;
   p {
@@ -155,6 +158,10 @@
 
 .article-content {
   display: block;
+
+  p {
+    line-height: 2em;
+  }
   p,
   ul,
   ol,
