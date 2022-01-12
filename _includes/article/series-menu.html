@@ -1,0 +1,14 @@
+{% assign serie = site.data.series[page.series] %}
+<div class="series-menu gradient-border gradient-border-top">
+    <span>Series: {{serie.title}}. All other posts in the serie:
+        
+        <ul>        
+            {% for art in serie.items %} 
+                <li >
+                    <a href="{{ 'posts/' | relative_url }}{{ art[1] }}"> {{art[0]}}</a>
+                </li>        
+            {% endfor %}
+        </ul>
+    </span>
+
+</div>

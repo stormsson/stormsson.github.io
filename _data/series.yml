@@ -1,0 +1,6 @@
+nft-panorama:
+  title: The NFT Panorama
+  items: 
+    - ["label 1", "nft-deeper-understanding"]
+    - ["label 2", "nft-deeper-understanding"]
+    - ["label 3", "nft-deeper-understanding"]

@@ -9,8 +9,12 @@
         <article class="article {% if site.scrollappear_enabled %}scrollappear{% endif %}">
           <header class="article-header">
             <h1>{{ page.title }}</h1>
-            <p>{{ page.description }}</p>
+            <div class="article-description"> {{ page.description}}</div>
             {% include article/info-footer.html post=page %}
+
+            {% if page.series and false %}              
+                {% include article/series-menu.html %}                      
+            {% endif %}
           </header>
 
           <div class="article-content">

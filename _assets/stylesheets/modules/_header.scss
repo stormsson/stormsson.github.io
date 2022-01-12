@@ -28,6 +28,9 @@
   &.gradient-border-bottom {
     border-bottom: 1px solid $accent;
   }
+  &.gradient-border-top {
+    border-top: 1px solid $accent;
+  }
 }
 
 .header-nav {
