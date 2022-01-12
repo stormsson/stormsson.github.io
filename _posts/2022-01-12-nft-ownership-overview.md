@@ -40,7 +40,7 @@ What about a contract between a buyer and a seller?
 
 Where I live, if you buy a house you MUST have a third party notary that will certify the change of ownership.
 
-Now again, let's say we meet and I make a masterfully crafted copy of your house contract with my name on it.
+Let's say I make a masterfully crafted copy of your house contract with my name on it.
 
 Am I the owner of the house now ?
 
@@ -82,9 +82,9 @@ Is this ownership ? Can you give it to somebody else ?  grant to somebody else t
 Not really: Netflix gives you a user account whose only privilege is access to the service.
 You can't sell it or demonstrate that you own it. You have possession.
 
-> Is there something online on which we have ownership ?  why do we need it ?
+Is there something online on which we have ownership ?
 
-Before today there wasn't the real necessity to have it: our ownerships **always** relies on an intermediary that grants it: the bank, paypal, etc.
+Before today there wasn't the real necessity to have it: our ownerships **always** relied on an intermediary that grants it: the bank, paypal, etc.
 
 If we want ownership we need to have **knowledge** and **tools** that demonstrate it.
 
@@ -100,31 +100,26 @@ Since NFT creation and ownership management relies on blockchain technology, and
 Not only this, the software is decentralized (no single entity controls it) and  distributed: there is no central node that can be taken down.
 
 
-> With a standardized method of control, easily accessible, the role of the certifier is no longer necessary: a software and a mathematical proof grants that a content is not altered, and owned by someone. 
+> With a standardized method of control the role of the certifier is no longer necessary: a software and a mathematical proof grants that a content is not altered, and owned by someone. 
 
 
 
-### Right management on content
+### Right management on data
 
 Today we consider normal to give our service providers rights on our contents: we upload pictures, thoughts, but we don't control it.
 It is very rare (and hard) to read the legal Terms of Use of the products we subscribe to, and this too gives the service providers the upper hand on how they really can use our content.
 
 Having platforms that handles user generated content by leveraging NFT features gives final users the authority on the contents.
 
-> If the infrastructure will be allowed to be created in this direction, then we will have new tools that for an unexperienced user will look identical to today's standards but under the hood work in a very different fashion.
-
-
-We need an instrument that
-* gives anybody an easy method to verify a claim (tools)
-* It is sufficiently 
-* It is safe "grants that the asset cannot be altered by anyone but the owner
-* It allows the owner to give the asset to somebody else without a third party
-
-There are many other properties that this instrument must have, but let's stop it here for the moment.
-
-
-Until today the answer was no: until blockchain (and Ethereum) entered the field there were no tools that could grant **Knowledge** and **Legitimacy** to a digital asset without an intermediary that manages the service you needed.
-You want to transfer money? you need paypal's servers and account, or your bank servers and account.
+> With infrastructure created in this direction we will have tools that allows users to directly control their data.
 
 
 
+## Conclusion
+
+There are dozens of other fields where NFT can be used: some of them try to replicate patterns we already know but removing redundant roles.
+
+Some other applications have the purpose to give finer logging and control over contents, and other application may grant privileges of access to services.
+
+
+<iframe width="100%" height="380" src="https://www.youtube-nocookie.com/embed/gipL_CEw-fk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
