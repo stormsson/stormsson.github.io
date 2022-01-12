@@ -95,7 +95,7 @@ Given the previous examples, here's some of the really strong features of NFTs:
 
 ###  Certification without an intermediary:
 
-Since NFT creation , and ownership management relies on blockchain technology, and since there is mathematical proof of how data is stored and considered unalterable, we can delegate the certification aspect to a software instead of a phisical intermediary.
+Since NFT creation and ownership management relies on blockchain technology, and since there is mathematical proof of how data is stored and considered unalterable, we can delegate the certification aspect to a software instead of a phisical intermediary.
 
 Not only this, the software is decentralized (no single entity controls it) and  distributed: there is no central node that can be taken down.
 
