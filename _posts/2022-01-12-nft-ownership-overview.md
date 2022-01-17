@@ -24,6 +24,8 @@ If you (legally) own a car is because there is a registry and a document somewhe
 
 If we meet and you say "I have 1 billion dollars", what is the difference between the balance reported by the bank and your statement ? 
 
+{% include image.html path="2022-01-12/bank.png" path-detail="2022-01-12/bank.png" alt="Two statement" %}
+
 The two statements are equally valid, but very few people will believe your statement unless the bank confirms it.
 
 The bank acts as the source of truth for your balance.
