@@ -61,7 +61,7 @@ Again, in this example, we have an intermediary.
 
 ## Step 2 - Ownership in the  digital world
 
-A definition of ownership is to "have the full and complete right of dominion over property". It is different from possession: if I borrow you my computer you have the possession, I still have the ownership.
+A definition of ownership is to "have the full and complete right of dominion over property". It is different from possession: if you borrow my computer you have the possession, I still have the ownership.
 
 How does this work in the digital world? 
 
