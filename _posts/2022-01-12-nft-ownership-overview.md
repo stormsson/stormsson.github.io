@@ -2,7 +2,7 @@
 layout: post
 title: "NFT: ownership of a digital asset"
 description: "Avoiding buzzwords and crypto-jpgs lets' see what they really could do in 3 steps."
-thumb_image: "documentation/sample-image.jpg"
+thumb_image: "2022-01-12/bank.png"
 tags: [ nft ]
 series: nft-panorama
 ---
