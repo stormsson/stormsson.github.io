@@ -76,6 +76,7 @@ exclude:
   - README.md
   - vendor/
   - yarn.lock
+  - notes.txt
 plugins:
   - jekyll-assets
   - jekyll-paginate
