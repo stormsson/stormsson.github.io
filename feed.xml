@@ -1,20 +1,26 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>mimmo.dev</title>
+    <description></description>
+    <link>https://mimmo.dev</link>
+    <atom:link href="https://mimmo.dev/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Random with Chainlink - Overview</title>
+        <description>How to generate random numbers with Chainlink VFR</description>
+        <pubDate>Wed, 04 May 2022 00:00:00 +0200</pubDate>
+        <link>https://mimmo.dev/posts/randomness-chainlink-vfr</link>
+        <guid isPermaLink="true">https://mimmo.dev/posts/randomness-chainlink-vfr</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>NFT: ownership of a digital asset</title>
+        <description>Avoiding buzzwords and crypto-jpgs lets' see what they really could do in 3 steps.</description>
+        <pubDate>Wed, 12 Jan 2022 00:00:00 +0100</pubDate>
+        <link>https://mimmo.dev/posts/nft-ownership-overview</link>
+        <guid isPermaLink="true">https://mimmo.dev/posts/nft-ownership-overview</guid>
+      </item>
+    
   </channel>
 </rss>

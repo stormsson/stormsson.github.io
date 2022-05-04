@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+<loc>https://mimmo.dev/tag/blockchain/</loc>
+<lastmod>2022-05-04T22:38:06+02:00</lastmod>
+</url>
+<url>
+<loc>https://mimmo.dev/tag/nft/</loc>
+<lastmod>2022-05-04T22:38:06+02:00</lastmod>
+</url>
+<url>
+<loc>https://mimmo.dev/tag/smart-contracts/</loc>
+<lastmod>2022-05-04T22:38:06+02:00</lastmod>
+</url>
+<url>
+<loc>https://mimmo.dev/posts/nft-ownership-overview</loc>
+<lastmod>2022-01-12T00:00:00+01:00</lastmod>
+</url>
+<url>
+<loc>https://mimmo.dev/posts/randomness-chainlink-vfr</loc>
+<lastmod>2022-05-04T00:00:00+02:00</lastmod>
+</url>
+<url>
+<loc>https://mimmo.dev/about</loc>
+</url>
+<url>
+<loc>https://mimmo.dev/</loc>
+</url>
+</urlset>

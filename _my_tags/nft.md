@@ -1,4 +1,0 @@
----
-slug: nft
-name: NFT
----

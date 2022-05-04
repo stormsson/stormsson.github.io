@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>mimmo.dev | Random with Chainlink - Overview</title>
+    <meta name="description" content="How to generate random numbers with Chainlink VFR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="Random with Chainlink - Overview">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mimmo.dev/posts/randomness-chainlink-vfr">
+    <meta property="og:description" content="How to generate random numbers with Chainlink VFR">
+    <meta property="og:site_name" content="mimmo.dev">
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://mimmo.dev/posts/randomness-chainlink-vfr">
+    <meta name="twitter:title" content="Random with Chainlink - Overview">
+    <meta name="twitter:description" content="How to generate random numbers with Chainlink VFR">  
+    <meta property="og:image" content="https://mimmo.dev/assets/2022-05-04/alperen-yazgi-dices-ea2bff8e5bef11ad156f65c9c551271b62520141464b2b695e1aa7e23b23ccbe.jpg">
+    <meta name="twitter:image" content="https://mimmo.dev/assets/2022-05-04/alperen-yazgi-dices-ea2bff8e5bef11ad156f65c9c551271b62520141464b2b695e1aa7e23b23ccbe.jpg">  
+
+    <link href="https://mimmo.dev/feed.xml" type="application/rss+xml" rel="alternate" title="mimmo.dev Last 10 blog posts" />   
+    <link rel="icon" type="image/x-icon" href="/assets/favicon-dark-b1f9f6f168d8ebc1ab8e2f90cfd8987027b77ad1cdc2d7bf1f0e92743beed287.png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon-dark-8e707ca8135b8235e99bd98adf7165cc3da16704436e473333cb450294207a34.png"> <link rel="stylesheet" type="text/css" href="/assets/dark-cec44348611f0dc33d85498a9b15acd0aedec5ea03c8cf6fa297f3f6f9b7b521.css">  
+
+    <script src="https://kit.fontawesome.com/efbb5af22b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <main>
+    <div class="grid grid-centered">
+      <div class="grid-cell">
+        <div id="navigation-container">
+    <nav class="header-nav scrollappear gradient-border gradient-border-bottom">
+        <a href="/" class="header-logo" title="mimmo.dev">mimmo.dev</a>
+        <ul class="header-links">
+            
+            <li>
+                <a href="/about" title="About me">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-about">
+  <use href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about" xlink:href="/assets/about-ecf154b571ab8034ae00aeed91a3b7ad68db80b46d958753ad6216c919486e88.svg#icon-about"></use>
+</svg>
+
+          </a>
+            </li>
+                
+            <li>
+                <a href="https://github.com/stormsson" rel="noreferrer noopener" target="_blank" title="GitHub">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-github">
+  <use href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github" xlink:href="/assets/github-094f81040819f34343ee6ffff0980f17e2807b08b595eaaf66ae3554934fd78d.svg#icon-github"></use>
+</svg>
+
+          </a>
+            </li>
+                             
+            <li>
+                <a href="https://etherscan.io/address/mimmo.eth" rel="noreferrer noopener" target="_blank" title="Ethereum">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-ethereum">
+  <use href="/assets/ethereum-e5088bcff9dd6d4e90b95e54087447ad297d3d03511a4e22746f68346e671537.svg#icon-ethereum" xlink:href="/assets/ethereum-e5088bcff9dd6d4e90b95e54087447ad297d3d03511a4e22746f68346e671537.svg#icon-ethereum"></use>
+</svg>
+
+          </a>
+            </li>
+               
+        </ul>
+    </nav>
+
+    
+    <ul class="header-tags scrollappear gradient-border gradient-border-bottom">
+          
+        <li><a href="/tag/nft">nft</a></li>
+         
+        <li><a href="/tag/smart-contracts">smart contracts</a></li>
+        
+    </ul>
+    
+
+</div>
+        <article class="article scrollappear">
+          <header class="article-header">
+            <h1>Random with Chainlink - Overview</h1>
+            <div class="article-description"> How to generate random numbers with Chainlink VFR</div>
+            <div class="article-list-footer">
+    <span class="article-list-date">
+    May 4, 2022
+  </span>
+    <span class="article-list-divider">-</span>
+    <span class="article-list-minutes">
+    
+    
+      3 minute read
+    
+  </span>
+    <span class="article-list-divider">-</span>    
+    <div class="article-list-tags">
+                 
+                    
+          <a href="/tag/smart-contracts" title="See all posts with tag 'Smart Contracts'">Smart Contracts</a> 
+        
+    </div>
+</div>
+
+            
+          </header>
+
+          <div class="article-content">
+            <p>Since the EVM is deterministic, it’s not actually possible to generate a totally random number.
+Just to name a problem: different nodes would generate different numbers, so data inconsistency arise between nodes.</p>
+
+<h2 id="chainlink-vrf">Chainlink VRF</h2>
+
+<p><strong>VRF</strong> stands for <strong>V</strong>erifiable <strong>R</strong>andom <strong>F</strong>unction.</p>
+
+<p>Chainlink provides an on-chain system that allows other smart contracts to receive random numbers that have on-chain proof of true randomness <a href="https://docs.chain.link/docs/intermediates-tutorial/" target="_blank">Read more</a></p>
+
+<p>The process of using random Chainlink VRF seems quite confusing at first, but it’s actually quite straightforward.</p>
+
+<h2 id="architecture-overview">Architecture overview</h2>
+
+<h3 id="coordinator-contract">Coordinator contract</h3>
+
+<p>A <strong>Coordinator</strong> contract</p>
+<ul>
+  <li>generate <strong>subscriptions</strong> for other contracts that need random numbers</li>
+  <li>provides the random numbers to them</li>
+</ul>
+
+<p>A <strong>subscription</strong> is just a numeric identifier between a Coordinator and an owner that provides funds in LINK.</p>
+
+<p>On the subscription you can <strong>register</strong>/<strong>unregister</strong> consumers addresses: only registered consumers may interact with the subscription.</p>
+
+<p>When a consumer requests random numbers it must provide its subscription too.
+This allows to check who is allowed to use the subscription funds.</p>
+
+<h3 id="asynchronous-random-numbers">Asynchronous random numbers</h3>
+
+<p>Producing the numbers is an asynchronous process: it requires a certain amount of blocks before the numbers are returned.
+When this happens the coordinator contract will call a consumer contract method to provide the values to the contract.
+The logic of what to do with these numbers is in the consumer contract.</p>
+
+<p>The coordinator is handled by Chainlink so we basically don’t need to know much more for the moment.</p>
+
+<h3 id="consumer-contract">Consumer Contract</h3>
+
+<p>When we want to use some randomness, we are a <strong>Consumer</strong>.</p>
+
+<p>A <strong>Consumer</strong> contract is a contract that</p>
+<ul>
+  <li>has the address of a specific coordinator to interact with</li>
+  <li>has the parameters that configure how to interact with the coordinator</li>
+  <li>overrides and implements the <strong>fulfillRandomWords</strong>  method  of the <strong>VRFConsumerBaseV2</strong> contract</li>
+</ul>
+
+<p>When deploying our consumer contract we must know the following concepts:</p>
+<ul>
+  <li>We need to have interact with a specific coordinator, defined by the address we decide.</li>
+  <li>We, as the consumer contract, need an active subscription with the coordinator in order to receive numbers
+(this can be done via smart contracts methods or, if you need just one subscription, manually from the web interface chainlink provides)</li>
+  <li>The coordinator needs LINKs tokens funding for the specific subscription in order to pay for the work
+(again, this can be done programmatically via smart contract or manually from the web UI)</li>
+  <li>we need to build the logic of what to do with the numbers when we receive them.</li>
+</ul>
+
+<p>The numbers are something like</p>
+
+<p><em>uint256: 74038576587151295566926440062894895049890862927323911969343895969009296037353</em></p>
+
+<p><em>uint256: 39734012598035685242862857745019683943452512009239385040200101796659307914370</em></p>
+
+<p>So for example should we neeed just a number between 1-20 we could use the chainlink example and do something like:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">fulfillRandomWords</span><span class="p">(</span><span class="nx">uint256</span> <span class="nx">requestId</span> <span class="p">,</span> <span class="nx">uint256</span><span class="p">[]</span> <span class="nx">memory</span> <span class="nx">randomWords</span><span class="p">)</span> <span class="nx">internal</span> <span class="nx">override</span> 
+<span class="p">{</span>
+
+    <span class="c1">// transform the result to a number between 1 and 20 inclusively</span>
+    <span class="nx">uint256</span> <span class="nx">d20Value</span> <span class="o">=</span> <span class="p">(</span><span class="nx">randomWords</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">%</span> <span class="mi">20</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+
+    <span class="c1">// ... other things ...</span>
+<span class="p">}</span></code></pre></figure>
+
+<h3 id="just-one-parameter-more">Just one parameter more</h3>
+<p>I hinted before that the Consumer contract needs some parameters to interact with the Coordinator.
+Should you choose to study just one, it’s the <strong>Gas Lane Hash Key</strong></p>
+
+<p>In Layman’s terms:</p>
+<blockquote>
+  <p>A parameter that allows you to decide the maximum gas price you are willing to pay for a request in wei</p>
+</blockquote>
+
+<p>Each blockchain coordinator has different lanes. You can find their hash in the <a href="https://docs.chain.link/docs/vrf-contracts/">VFR Contract Page</a></p>
+
+<h2 id="tldr">TL;DR</h2>
+<ul>
+  <li>create a subscription with a <strong>Coordinator</strong> and save the ID</li>
+  <li>Fund the subscription with LINK</li>
+  <li>From the <strong>Consumer</strong> interact with the <strong>Coordinator</strong> by providing the subscription ID</li>
+  <li>Handle the logic to execute when the numbers are received in the Consumer <strong>fullfillRandomWords</strong> function</li>
+</ul>
+
+<h2 id="references">References</h2>
+<p><a href="https://docs.chain.link/docs/intermediates-tutorial/">Chainlink documentation</a></p>
+
+<p><a href="https://vrf.chain.link/">Chainlink WebUI to manage Subscriptions</a> (check the docs for differnt networks)</p>
+
+<p><a href="https://github.com/smartcontractkit/chainlink/">Chainlink smart contracts repo</a></p>
+
+          </div>
+          <div class="article-share">
+            
+            
+            <a href="https://twitter.com/home?status=Random+with+Chainlink+-+Overview%20-%20https://mimmo.dev/posts/randomness-chainlink-vfr" title="Share on Twitter" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M492 109.5c-17.4 7.7-36 12.9-55.6 15.3 20-12 35.4-31 42.6-53.6 -18.7 11.1-39.4 19.2-61.5 23.5C399.8 75.8 374.6 64 346.8 64c-53.5 0-96.8 43.4-96.8 96.9 0 7.6 0.8 15 2.5 22.1 -80.5-4-151.9-42.6-199.6-101.3 -8.3 14.3-13.1 31-13.1 48.7 0 33.6 17.2 63.3 43.2 80.7C67 210.7 52 206.3 39 199c0 0.4 0 0.8 0 1.2 0 47 33.4 86.1 77.7 95 -8.1 2.2-16.7 3.4-25.5 3.4 -6.2 0-12.3-0.6-18.2-1.8 12.3 38.5 48.1 66.5 90.5 67.3 -33.1 26-74.9 41.5-120.3 41.5 -7.8 0-15.5-0.5-23.1-1.4C62.8 432 113.7 448 168.3 448 346.6 448 444 300.3 444 172.2c0-4.2-0.1-8.4-0.3-12.5C462.6 146 479 129 492 109.5z"/></svg>
+            </a>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://mimmo.dev/posts/randomness-chainlink-vfr" title="Share on Facebook" rel="noreferrer noopener" target="_blank">
+              <svg viewBox="0 0 512 512"><path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64H288z"/></svg>
+            </a>
+          </div>
+
+          
+        </article>
+        <footer class="footer scrollappear gradient-border gradient-border-top">
+  <p>This site uses no cookies.</p>  
+</footer>
+
+      </div>
+    </div>
+  </main>
+  
+
+<script src="/assets/vendor-734ddaa553ebf4e6ca703bd7c567ef4a0e43b0ba799607355e56b81e88781318.js" type="text/javascript"></script>
+
+
+  <script src="/assets/webfonts-b7993d36e125f82302abddc81b0af8502555ea09a566efb75085320323bbf46a.js" type="text/javascript"></script>
+
+
+
+  <script src="/assets/scrollappear-e2da8ea567e418637e31266cc5302126eaa79f62a2273739086358b589a89ee6.js" type="text/javascript"></script>
+
+
+<script src="/assets/application-a918e7d3a06663610e22973045c0b91c439a8d5c5153f4a5664b8c77ed0dc933.js" type="text/javascript"></script>
+
+
+
+
+
+
+</body>
+</html>
