@@ -3,7 +3,7 @@ layout: post
 title: "Random with Chainlink - Overview"
 description: "How to generate random numbers with Chainlink VFR"
 thumb_image: "2022-05-04/alperen-yazgi-dices.jpg"
-tags: [ blockchain, smart-contracts ]
+tags: [ smart-contracts ]
 ---
 
 
